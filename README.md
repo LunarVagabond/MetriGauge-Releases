@@ -2,43 +2,43 @@
 
 This repository hosts **public, signed release artifacts** for the MetriGauge desktop application (Tauri).
 
-- **What this repo is for**: downloadable installers/AppImages and update metadata used by the in-app updater.
-- **What this repo is not for**: source code, issue tracking, feature requests, or internal documentation.
+- **Purpose**: Distribution of downloadable binaries and update metadata used by the in-app updater  
+- **Not included**: Source code, issue tracking, feature requests, or internal documentation  
 
 ## Downloads
 
-Go to the **Releases** section of this repository and download the latest build for your OS.
+Visit the **Releases** section of this repository to download the latest version.
 
-- **Linux**: AppImage (recommended) and `.deb` when available
-- **Windows**: installer (`.exe`) and/or `.msi` when available
+- **Linux**: AppImage (recommended)  
+- **Windows**: MSI installer  
 
-If you are unsure which file to pick, choose the installer for your operating system with the most recent version number.
+If you are unsure which file to select, download the installer that matches your operating system.
 
-## Automatic updates (in-app)
+## Automatic Updates (In-App)
 
-Newer versions of MetriGauge include an in-app updater.
+Recent versions of MetriGauge include an in-app update mechanism.
 
-- When an update is available, the app will show an update prompt.
-- Clicking **Install update** will download and apply the update.
-- You may need to **restart the app** after installation.
+- When an update is available, the application will display a prompt  
+- Selecting **Install Update** will download and apply the update  
+- A restart may be required to complete installation  
 
-### Updater metadata
+## Updater Metadata
 
-This repo publishes updater metadata files alongside each release, for example:
+This repository publishes updater metadata alongside each release, including:
 
-- `latest-<target>.json` (update manifest)
-- signature files and packaged update artifacts created during the build
+- `latest.json` (update manifest)  
+- Signature files and packaged update artifacts generated during the build process  
 
-These files are consumed by the MetriGauge application to securely verify and apply updates.
+These files are used by the application to securely verify and apply updates.
 
-## Release authenticity / signing
+## Release Authenticity & Signing
 
-Releases are signed during CI. The application verifies updates before installing them.
+All releases are signed as part of the CI pipeline. The application verifies update integrity before installation.
 
-If you obtained the app from somewhere other than this repository’s Releases page, you should treat it as untrusted.
+If you obtained the application from a source other than this repository’s Releases page, it should be considered **untrusted**.
 
 ## Support
 
-For support, contact your MetriGauge administrator / your organization’s support contact.
+For support, please contact your MetriGauge administrator or your organization’s designated support channel.
 
-(Internal: source code and issue tracking are maintained privately.)
+MetriGauge is developed and maintained by **MetriCal Laboratories LLC**.
